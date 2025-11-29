@@ -1,0 +1,221 @@
+
+.about-container {
+  width: 100%;
+  padding: 60px 8%;
+  background: #fff8f0;
+  box-sizing: border-box;
+}
+
+
+.about-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2.8rem;
+  color: #ff7b00;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.7rem;
+  margin-bottom: 15px;
+}
+
+.about-img {
+  flex: 1;
+  text-align: center;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.chef-section {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.chef-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #ff7b00;
+}
+
+.chef-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.chef-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.chef-info {
+  max-width: 500px;
+  text-align: left;
+}
+
+.chef-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #ff7b00;
+}
+
+.chef-info p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #444;
+  line-height: 1.7rem;
+}
+
+.chef-info ul li {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.why-us {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.why-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ff7b00;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.why-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+}
+
+.why-card h3 {
+  color: #ff7b00;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  color: #444;
+  font-size: 1.05rem;
+}
+
+
+.mission-section {
+  text-align: center;
+  margin-bottom: 90px;
+  background: #ffe4cc;
+  padding: 45px 20px;
+  border-radius: 14px;
+}
+
+.mission-section h2 {
+  font-size: 2.3rem;
+  margin-bottom: 15px;
+  color: #ff7b00;
+}
+
+.mission-section p {
+  font-size: 1.2rem;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7rem;
+}
+
+
+.highlights {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.highlight-card {
+  background: #ffffff;
+  padding: 30px;
+  flex: 1;
+  min-width: 180px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-6px);
+}
+
+.highlight-card h3 {
+  font-size: 2.4rem;
+  color: #ff7b00;
+  margin-bottom: 5px;
+}
+
+.highlight-card p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+
+@media (max-width: 900px) {
+  .about-main {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .chef-info {
+    text-align: center;
+  }
+
+  .chef-card {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .highlight-card h3 {
+    font-size: 2rem;
+  }
+}
