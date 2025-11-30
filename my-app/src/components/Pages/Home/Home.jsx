@@ -10,6 +10,7 @@ import banner4 from "../../../assets/banner4.jpeg";
 import banner5 from "../../../assets/banner5.jpeg";
 import banner6 from "../../../assets/banner6.jpeg";
 import banner7 from "../../../assets/banner7.jpeg";
+import { useNavigate } from "react-router";
 
 const Home = () => {
   const images = [
@@ -23,6 +24,7 @@ const Home = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -48,7 +50,7 @@ const Home = () => {
               Taste the best dishes crafted with love and perfection.
             </p>
 
-            <button className="hero-btn">Explore Menu</button>
+            <button className="hero-btn" onClick={() => navigate("/menu")}>Explore Menu</button>
           </div>
         </div>
       </div>
