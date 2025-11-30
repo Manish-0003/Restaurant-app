@@ -2,6 +2,8 @@ import React from "react";
 import "./About.css";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
+import  chef from "../../../assets/chef.jpeg";
+import reser from "../../../assets/reser.jpeg";
 
 const About = () => {
   return (
@@ -24,7 +26,7 @@ const About = () => {
           </div>
 
           <div className="about-img">
-            <img src="/images/about-restaurant.jpg" alt="Restaurant" />
+            <img src={reser} alt="Restaurant" />
           </div>
         </section>
 
@@ -32,7 +34,7 @@ const About = () => {
           <h2>Meet Our Master Chef</h2>
 
           <div className="chef-card">
-            <img src="/images/chef.jpg" alt="Chef" className="chef-img" />
+            <img src={chef} alt="Chef" className="chef-img" />
 
             <div className="chef-info">
               <h3>Chef Aarav Mehta</h3>

@@ -53,6 +53,15 @@
 .login-btn:hover {
   background: #e56d00;
 }
+.cart-badge {
+  background: #ff4d4d;
+  padding: 3px 8px;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  margin-left: 5px;
+  font-weight: bold;
+}
 
 
 .hamburger {

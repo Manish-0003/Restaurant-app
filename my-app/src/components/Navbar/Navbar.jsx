@@ -50,8 +50,8 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/cart" className="cart-icon" onClick={closeMenu}>
-              <span>{cartCount}</span>
-              Cart
+              
+              Cart  <span className="cart-badge">{cartCount}</span>
             </Link>
           </li>
           <li>

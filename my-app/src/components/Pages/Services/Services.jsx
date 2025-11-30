@@ -2,6 +2,12 @@ import React from "react";
 import "./Services.css";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
+import dinein from "../../../assets/dinein.jpeg";
+import deliv from "../../../assets/deliv.jpeg";
+import food from "../../../assets/foodreserv.webp";
+import cater from "../../../assets/catering.webp";
+import events from "../../../assets/events-1.png";
+import take from  "../../../assets/takeaway.png";
 
 const Services = () => {
   return (
@@ -18,7 +24,7 @@ const Services = () => {
 
         <div className="services-grid">
           <div className="service-card">
-            <img src="" alt="dine-in" />
+            <img src={dinein} alt="dine-in" />
             <h3>Dine-In Experience</h3>
             <p>
               Enjoy a warm and cozy dine-in experience with premium hospitality.
@@ -26,25 +32,25 @@ const Services = () => {
           </div>
 
           <div className="service-card">
-            <img src="" alt="Delivery" />
+            <img src={deliv} alt="Delivery" />
             <h3>Fast Home Delivery</h3>
             <p>Hot, fresh, and fast food delivered right to your doorstep.</p>
           </div>
 
           <div className="service-card">
-            <img src="" alt="Reservation" />
+            <img src={food} alt="Reservation" />
             <h3>Online Table Reservation</h3>
             <p>Book your table online and avoid the waiting time.</p>
           </div>
 
           <div className="service-card">
-            <img src=" " alt="Catering" />
+            <img src={cater} alt="Catering" />
             <h3>Catering Services</h3>
             <p>Perfect catering for weddings, parties, and corporate events.</p>
           </div>
 
           <div className="service-card">
-            <img src=" " alt="Events" />
+            <img src={events} alt="Events" />
             <h3>Event Hosting</h3>
             <p>
               We host birthday parties, anniversaries, and small gatherings.
@@ -52,7 +58,7 @@ const Services = () => {
           </div>
 
           <div className="service-card">
-            <img src="" alt="Takeaway" />
+            <img src={take} alt="Takeaway" />
             <h3>Easy Takeaway</h3>
             <p>Quick takeaway service for customers on the go.</p>
           </div>
