@@ -1,0 +1,40 @@
+.gallery-section {
+  background-color: antiquewhite;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.gallery-section h1 {
+  color: black;
+  font-size: 30px;
+  margin-top: 30px;
+}
+.gallery-section p {
+  color: #555;
+  margin-bottom: 20px;
+}
+.gallery-grid {
+  display: grid;
+  
+  width: 80%;
+
+  margin: auto;
+  gap: 12px;
+}
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  transition: transform 0.4s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+.gallery-item:hover img {
+  transform: scale(1.05);
+  filter: brightness(85%);
+}
